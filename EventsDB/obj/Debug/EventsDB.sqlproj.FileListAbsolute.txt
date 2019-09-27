@@ -1,0 +1,10 @@
+C:\Sreekanth\Core\EventsApp\EventsDB\bin\Debug\EventsDB.dacpac
+C:\Sreekanth\Core\EventsApp\EventsDB\bin\Debug\EventsDB.dll
+C:\Sreekanth\Core\EventsApp\EventsDB\bin\Debug\EventsDB.pdb
+C:\Sreekanth\Core\EventsApp\EventsDB\obj\Debug\EventsDB.sqlprojAssemblyReference.cache
+C:\Sreekanth\Core\EventsApp\EventsDB\obj\Debug\Model.xml
+C:\Sreekanth\Core\EventsApp\EventsDB\obj\Debug\refactor.xml
+C:\Sreekanth\Core\EventsApp\EventsDB\obj\Debug\postdeploy.sql
+C:\Sreekanth\Core\EventsApp\EventsDB\obj\Debug\predeploy.sql
+C:\Sreekanth\Core\EventsApp\EventsDB\obj\Debug\EventsDB.dll
+C:\Sreekanth\Core\EventsApp\EventsDB\obj\Debug\EventsDB.pdb

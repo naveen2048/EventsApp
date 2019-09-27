@@ -1,0 +1,14 @@
+C:\Sreekanth\Core\EventsApp\EventsApp.Orders.API\bin\Debug\netcoreapp2.2\EventsApp.Orders.API.deps.json
+C:\Sreekanth\Core\EventsApp\EventsApp.Orders.API\bin\Debug\netcoreapp2.2\EventsApp.Orders.API.runtimeconfig.json
+C:\Sreekanth\Core\EventsApp\EventsApp.Orders.API\bin\Debug\netcoreapp2.2\EventsApp.Orders.API.runtimeconfig.dev.json
+C:\Sreekanth\Core\EventsApp\EventsApp.Orders.API\bin\Debug\netcoreapp2.2\EventsApp.Orders.API.dll
+C:\Sreekanth\Core\EventsApp\EventsApp.Orders.API\bin\Debug\netcoreapp2.2\EventsApp.Orders.API.pdb
+C:\Sreekanth\Core\EventsApp\EventsApp.Orders.API\obj\Debug\netcoreapp2.2\EventsApp.Orders.API.csproj.CoreCompileInputs.cache
+C:\Sreekanth\Core\EventsApp\EventsApp.Orders.API\obj\Debug\netcoreapp2.2\EventsApp.Orders.API.RazorAssemblyInfo.cache
+C:\Sreekanth\Core\EventsApp\EventsApp.Orders.API\obj\Debug\netcoreapp2.2\EventsApp.Orders.API.RazorAssemblyInfo.cs
+C:\Sreekanth\Core\EventsApp\EventsApp.Orders.API\obj\Debug\netcoreapp2.2\EventsApp.Orders.API.AssemblyInfoInputs.cache
+C:\Sreekanth\Core\EventsApp\EventsApp.Orders.API\obj\Debug\netcoreapp2.2\EventsApp.Orders.API.AssemblyInfo.cs
+C:\Sreekanth\Core\EventsApp\EventsApp.Orders.API\obj\Debug\netcoreapp2.2\EventsApp.Orders.API.RazorTargetAssemblyInfo.cache
+C:\Sreekanth\Core\EventsApp\EventsApp.Orders.API\obj\Debug\netcoreapp2.2\EventsApp.Orders.API.dll
+C:\Sreekanth\Core\EventsApp\EventsApp.Orders.API\obj\Debug\netcoreapp2.2\EventsApp.Orders.API.pdb
+C:\Sreekanth\Core\EventsApp\EventsApp.Orders.API\obj\Debug\netcoreapp2.2\EventsApp.Orders.API.csprojAssemblyReference.cache
