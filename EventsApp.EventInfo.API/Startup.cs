@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EventInfo.Business;
+using EventInfo.Business.Services;
+using EventInfo.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -26,6 +30,12 @@ namespace EventsApp.EventInfo.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            var connectionstring = "Data Source=EPBYMINW6735;Initial Catalog=EventsDB;Integrated Security=True";
+            services.AddDbContext<EventsDBContext>(o => o.UseSqlServer(connectionstring));
+
+            services.AddTransient<IEventInfoService, EventInfoService>();
+            services.AddTransient<IAutoMapper, AutoMapping>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

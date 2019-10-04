@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {AdRotatorComponent} from '../ad-rotator/ad-rotator.component'
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    console.log('home');
+  }
 
   ngOnInit() {
   }
