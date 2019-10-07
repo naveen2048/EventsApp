@@ -1,0 +1,47 @@
+.CategoryBlock {
+  text-align: center;
+}
+.Primary-Category {
+  min-height: 150px;
+  border: 5px solid #ffffff;
+  padding: 30px 5px -1px 0;
+  margin: 20px;
+  box-shadow: 0px 2px 4px 1px #fff;
+  border-radius:10px;
+  /* background: #394a6d; */
+  background: gray;
+  color:white;
+}
+.categoryTitle {
+  font-size: 22px;
+  line-height: 5rem;
+  color: #fff;
+  text-decoration: none;
+}
+.fa-10x{
+  font-size: 10rem;
+}
+a:focus, a:hover {
+  color: #8cddcd;
+  text-decoration: underline;
+}
+/* .fa-truck:before{
+  color: #fff;
+} */
+.Primary-Category a {
+  color: #ffffff;
+}
+.Primary-Category a:hover {
+  color: #212b5a;
+}
+
+.Primary-Category:hover {
+  background: #fdb706;
+  border: 5px solid #212b5a;
+  box-shadow: 0px 2px 4px 1px #212b5a;
+  color: black;
+}
+
+.thumbnail {
+  padding: 5px;
+}

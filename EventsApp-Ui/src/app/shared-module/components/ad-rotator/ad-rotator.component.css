@@ -3,18 +3,18 @@
 ngbd-table-filtering span.ngb-highlight {
     background-color: yellow;
   }
-  
+
   /* Complete table demo */
   ngbd-table-complete span.ngb-highlight {
     background-color: yellow;
   }
-  
+
   ngb-carousel .picsum-img-wrapper {
     position: relative;
     height: 0;
     padding-top: 55%; /* Keep ratio for 900x500 images */
   }
-  
+
   ngb-carousel .picsum-img-wrapper>img {
     position: absolute;
     top: 0;
@@ -24,3 +24,7 @@ ngbd-table-filtering span.ngb-highlight {
   }
   .carouselImage { width:100%;  height: auto;}
   ::ng-deep .container-fluid { padding:0 !important; }
+
+  .image-container {
+    padding: 100px;
+  }

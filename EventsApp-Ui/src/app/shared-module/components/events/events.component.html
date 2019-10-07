@@ -1,0 +1,29 @@
+<div class="row">
+  <!-- <div class="col col-xs-6 Primary-Category" *ngFor="let x of data" activeSection>
+    <a [routerLink]="[x.navigate]">
+      <div class="row text-center">
+        <div class="col-xs-12">
+          <i class="{{x.icon}}" aria-hidden="true"></i>
+        </div>
+        <div class="col-xs-12">
+          <span class="categoryTitle">{{x.category}}</span>
+        </div>
+        <div class="col-xs-12">
+          <p class="categoryDes">{{x.description}}</p>
+        </div>
+      </div>
+    </a>
+  </div> -->
+    <div class="col col-xs-6 Primary-Category" *ngFor="let event of data">
+      <div class="thumbnail">
+        <img src="../../../../assets/img/logo-nav@2x.png" alt="...">
+        <hr/>
+        <div class="caption">
+          <h3>{{ event.category }}</h3>
+          <p>{{ event.description }}</p>
+          <hr/>
+          <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        </div>
+      </div>
+    </div>
+</div>

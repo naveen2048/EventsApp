@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { LoginComponent } from './components/login/login.component';
 import { SharedRoutingModule } from './shared-routing.module';
+import { EventsComponent } from './components/events/events.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { SharedRoutingModule } from './shared-routing.module';
     HomeComponent,
     FooterComponent,
     AdRotatorComponent,
-    LoginComponent
+    LoginComponent,
+    EventsComponent
    
   ],
   imports: [
