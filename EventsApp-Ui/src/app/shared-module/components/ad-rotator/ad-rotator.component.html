@@ -1,4 +1,4 @@
-<div class="col col-xs-8 offset-xs-2 image-container">
+<div class="col col-xs-12 offset-xs-2 image-container">
   <ngb-carousel #carousel interval="1000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
     <ng-template ngbSlide *ngFor="let img of images; index as i;">
       <div class="carousel-caption">
@@ -11,5 +11,4 @@
       </a>
     </ng-template>
   </ngb-carousel>
-  <hr>
 </div>

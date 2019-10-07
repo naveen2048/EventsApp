@@ -11,6 +11,16 @@ import { LoginComponent } from './components/login/login.component';
 import { SharedRoutingModule } from './shared-routing.module';
 import { EventsComponent } from './components/events/events.component';
 
+//Material
+import {
+  MatIconModule, MatButtonModule, MatChipsModule
+} from '@angular/material';
+
+const _MaterialComponents = [
+  MatIconModule,
+  MatButtonModule,
+  MatChipsModule
+];
 
 @NgModule({
   declarations: [
@@ -20,14 +30,24 @@ import { EventsComponent } from './components/events/events.component';
     AdRotatorComponent,
     LoginComponent,
     EventsComponent
-   
   ],
   imports: [
-    CommonModule, FormsModule,SharedRoutingModule,NgbModule
+    CommonModule,
+    FormsModule,
+    SharedRoutingModule,
+    NgbModule,
+    _MaterialComponents
   ],
-  exports:[HeaderComponent,FooterComponent,HomeComponent,AdRotatorComponent,LoginComponent]
+  exports:[
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+    AdRotatorComponent,
+    LoginComponent,
+    _MaterialComponents
+  ]
 })
-export class SharedModule{ 
+export class SharedModule{
   constructor(){
     console.log('shared module loads..')
   }

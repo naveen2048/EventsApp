@@ -2,7 +2,11 @@ import { Component, ViewChild } from '@angular/core';
 import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
 
 
-@Component({selector: 'ad-rotator', templateUrl: './ad-rotator.component.html'})
+@Component({
+  selector: 'ad-rotator',
+  templateUrl: './ad-rotator.component.html',
+  styleUrls: ['./ad-rotator.component.css']
+})
 export class AdRotatorComponent {
   images = [1, 2, 3, 4, 5, 6, 7].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
 
