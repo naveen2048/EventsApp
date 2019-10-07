@@ -30,7 +30,7 @@ namespace EventsApp.EventInfo.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            var connectionstring = "Data Source=EPBYMINW6735;Initial Catalog=EventsDB;Integrated Security=True";
+            var connectionstring = "Data Source=.;Initial Catalog=EventsDB;Integrated Security=True";
             services.AddDbContext<EventsDBContext>(o => o.UseSqlServer(connectionstring));
 
             services.AddTransient<IEventInfoService, EventInfoService>();
