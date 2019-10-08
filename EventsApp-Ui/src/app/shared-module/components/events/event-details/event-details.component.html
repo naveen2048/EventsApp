@@ -1,5 +1,18 @@
-<div class="row">
-  <div class="col col-md-6">
+
+<div class="row"> <!--Image banner -->
+ <div class="col col-xs-6">
+    <img src="../../../../../assets/img/no-image.png">
+ </div>
+</div>
+<div class="row"> <!-- Event Name & Description -->
+  <div class="col col-xs-6">
+    <h3>{{ event.description }}</h3>
+    <mat-icon>date_range</mat-icon><span>{{ event.date }}</span>
+    <div><h6>{{ event.category }}</h6></div>
+  </div>
+ </div>
+ <div class="row">
+    <div class="col col-md-6">
     <p>
         Angular-Material2: Align text and md-icon vertically to match ...
 
@@ -24,12 +37,11 @@
     </p>
   </div>
 </div>
-<!-- adas
-
+<!--
 Row 1 - Image banner for the event
 Row 2 - Event Name, description, timing and other options
 Row 3 - Date selection
-Row 4 - Passes with quantity selection
+Row 4 - Select tickets/Passes with quantity selection
 Row 5 - About the event in details
 Row 6 - More events from the same organizer
 Row 7 - Map location (google map)
