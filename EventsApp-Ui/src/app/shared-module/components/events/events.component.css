@@ -23,13 +23,13 @@
 }
 a:focus, a:hover {
   color: #8cddcd;
-  text-decoration: underline;
+  text-decoration: none;
 }
 /* .fa-truck:before{
   color: #fff;
 } */
 .Primary-Category a {
-  color: #ffffff;
+  color: black;
 }
 .Primary-Category a:hover {
   color: #212b5a;

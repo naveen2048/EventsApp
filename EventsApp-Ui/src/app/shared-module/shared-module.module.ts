@@ -15,6 +15,7 @@ import { EventsComponent } from './components/events/events.component';
 import {
   MatIconModule, MatButtonModule, MatChipsModule
 } from '@angular/material';
+import { EventDetailsComponent } from './components/events/event-details/event-details.component';
 
 const _MaterialComponents = [
   MatIconModule,
@@ -29,7 +30,8 @@ const _MaterialComponents = [
     FooterComponent,
     AdRotatorComponent,
     LoginComponent,
-    EventsComponent
+    EventsComponent,
+    EventDetailsComponent
   ],
   imports: [
     CommonModule,
@@ -44,6 +46,8 @@ const _MaterialComponents = [
     HomeComponent,
     AdRotatorComponent,
     LoginComponent,
+    EventsComponent,
+    EventDetailsComponent,
     _MaterialComponents
   ]
 })
