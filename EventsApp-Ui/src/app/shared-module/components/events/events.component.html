@@ -1,45 +1,24 @@
 <div class="row events">
-  <!-- <div class="col col-xs-6 Primary-Category" *ngFor="let x of data" activeSection>
-    <a [routerLink]="[x.navigate]">
-      <div class="row text-center">
-        <div class="col-xs-12">
-          <i class="{{x.icon}}" aria-hidden="true"></i>
-        </div>
-        <div class="col-xs-12">
-          <span class="categoryTitle">{{x.category}}</span>
-        </div>
-        <div class="col-xs-12">
-          <p class="categoryDes">{{x.description}}</p>
-        </div>
-      </div>
-    </a>
-  </div> -->
-    <div class="col col-xs-6 Primary-Category" *ngFor="let event of data">
-      <a href="#" routerLink="/event-details/{{event.id}}">
-      <div class="thumbnail">
-        <div class="eventImg">
-          <img src="../../../../assets/img/no-image.png" alt="...">
-        </div>
-        <hr/>
-        <div class="caption">
-          <div class="row"><h3>{{ event.category }}</h3></div>
-          <div class="row"><mat-icon>date_range</mat-icon><span>{{ event.date }}</span></div>
-          <div class="row"><p>{{ event.description }}</p></div>
-          <hr/>
-        </div>
-        <div class="row">
-            <div class="col float-left">
-                <button mat-icon-button aria-label="Example icon-button with a heart icon" (click)="share()">
-                    <mat-icon>share</mat-icon>
-                  </button>
+ <div class="col-md-4" *ngFor="let event of data">
+        <div class="card card-chart">
+            <div class="card-header card-header-warning">
+                <div class="ct-chart" id="dailySalesChart">
+                    <img src="../../../../assets/img/no-image.png" alt="...">
+                </div>
             </div>
-            <div class="col float-right">
-              <div class="row">
+            <div class="card-body">
+                <h4 class="card-title">{{ event.description }}</h4>
+                <p class="card-category">
+                    {{ event.category }}  </p>
+            </div>
+            <div class="card-footer">
+                <div class="stats">
+                    <mat-icon>date_range</mat-icon><span>{{ event.date }}</span>
+                </div>
+                <div class="stats pull-right">
                     <mat-icon>my_location</mat-icon> <span> {{ event.location }} </span>
-              </div>
-               </div>
-          </div>
-      </div>
-    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

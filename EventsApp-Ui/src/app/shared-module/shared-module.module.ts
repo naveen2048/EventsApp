@@ -10,17 +10,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { LoginComponent } from './components/login/login.component';
 import { SharedRoutingModule } from './shared-routing.module';
 import { EventsComponent } from './components/events/events.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Material
 import {
-  MatIconModule, MatButtonModule, MatChipsModule
+  MatIconModule, MatButtonModule, MatChipsModule, MatMenuModule
 } from '@angular/material';
 import { EventDetailsComponent } from './components/events/event-details/event-details.component';
 
 const _MaterialComponents = [
   MatIconModule,
   MatButtonModule,
-  MatChipsModule
+  MatChipsModule,
+  MatMenuModule
 ];
 
 @NgModule({
