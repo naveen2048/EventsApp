@@ -1,3 +1,8 @@
 .navbar-custom{
 background-color:#394a6d !important;
+/* background-color:  rgb(117,117,117) !important; */
+}
+
+.material-icons {
+  color:white !important;
 }
