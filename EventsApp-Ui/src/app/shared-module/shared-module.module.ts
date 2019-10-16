@@ -17,6 +17,8 @@ import {
   MatIconModule, MatButtonModule, MatChipsModule, MatMenuModule
 } from '@angular/material';
 import { EventDetailsComponent } from './components/events/event-details/event-details.component';
+import { FilterPipe } from './filter.pipe';
+import { MessageService } from './shared.service';
 
 const _MaterialComponents = [
   MatIconModule,
@@ -33,7 +35,8 @@ const _MaterialComponents = [
     AdRotatorComponent,
     LoginComponent,
     EventsComponent,
-    EventDetailsComponent
+    EventDetailsComponent,
+    FilterPipe
   ],
   imports: [
     CommonModule,
@@ -51,6 +54,10 @@ const _MaterialComponents = [
     EventsComponent,
     EventDetailsComponent,
     _MaterialComponents
+  ],
+  providers: [
+    MessageService,
+    FilterPipe
   ]
 })
 export class SharedModule{

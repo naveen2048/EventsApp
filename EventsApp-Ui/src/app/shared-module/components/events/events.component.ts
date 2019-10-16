@@ -1,47 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { eventModel } from 'src/app/models/event-model';
+import { MessageService } from '../../shared.service';
+import { Subscription, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-events',
   templateUrl: './events.component.html',
   styleUrls: ['./events.component.css']
 })
-export class EventsComponent implements OnInit {
+export class EventsComponent implements OnInit, OnDestroy {
+  datax: eventModel[] = [];
 
-  data = [{
-    id:1,
-    category: 'Music',
-    description: 'Arijit Singh concert LIVE in US',
-    location: 'Hyderabad',
-    date:'December 25, 2019'
-  },
-  {
-    id:2,
-    category: 'Technology Gather',
-    description: 'Meet with all big Tech Companies',
-    location: 'Mumbai',
-    date:'October 14, 2019'
-  },
-  {
-    id:3,
-    category: 'Technology Gather',
-    description: 'Meet with all big Tech Companies',
-    location: 'Mumbai',
-    date:'October 14, 2019'
-  },
-  {
-    id:4,
-    category: 'Technology Gather',
-    description: 'Meet with all big Tech Companies',
-    location: 'Mumbai',
-    date:'October 14, 2019'
+  data: eventModel[];// = [];
+  subscription: Subscription;
+
+  constructor(private messageService: MessageService) {
+    this.messageService.getFilterEvents().subscribe(events => {
+      this.data = events;
+    });
   }
-];
-  constructor() { }
 
   ngOnInit() {
   }
 
   share() {
     alert("Share me !!!");
+  }
+
+  ngOnDestroy() {
+    //this.subscription.unsubscribe();
   }
 }

@@ -1,15 +1,25 @@
 <div class="row events">
  <div class="col-md-4" *ngFor="let event of data">
         <div class="card card-chart">
+          <a routerLink="/event-details/{{event.id}}">
             <div class="card-header card-header-warning">
                 <div class="ct-chart" id="dailySalesChart">
-                    <img src="../../../../assets/img/no-image.png" alt="...">
+                    <img class="eventImg" src="../../../../assets/img/cover.jpeg" alt="...">
                 </div>
             </div>
+          </a>
             <div class="card-body">
-                <h4 class="card-title">{{ event.description }}</h4>
+                <h4 class="card-title">
+                 <a routerLink="/event-details/{{event.id}}">{{ event.title }}</a>
+                </h4>
+                <h5>
+                  <p>
+                    {{ event.description }}
+                  </p>
+                </h5>
                 <p class="card-category">
-                    {{ event.category }}  </p>
+                    {{ event.category }}
+                </p>
             </div>
             <div class="card-footer">
                 <div class="stats">

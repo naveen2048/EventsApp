@@ -11,10 +11,10 @@
       </form>
    </nav>
   </div> -->
-  <nav class="navbar navbar-expand-lg navbar-transparent navbar-custom  navbar-absolute fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-transparent navbar-custom fixed-top">
       <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="javascript:void(0)">{{getTitle()}}</a>
+            <a class="navbar-brand" routerLink="/">Any where events !!!</a>
           </div>
           <button mat-raised-button class="navbar-toggler" type="button" (click)="sidebarToggle()">
               <span class="sr-only">Toggle navigation</span>
@@ -25,7 +25,7 @@
           <div class="collapse navbar-collapse justify-content-end" id="navigation">
               <form class="navbar-form">
                   <div class="input-group no-border">
-                      <input type="text" value="" class="form-control" placeholder="Search...">
+                      <input type="text" value="" name="_search" class="form-control" (keydown)="applyFilter()" [(ngModel)]="searchText" placeholder="Search...">
                       <button mat-raised-button type="submit" class="btn btn-white btn-round btn-just-icon">
                           <i class="material-icons">search</i>
                           <div class="ripple-container"></div>

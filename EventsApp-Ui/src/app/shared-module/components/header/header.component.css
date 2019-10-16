@@ -1,8 +1,9 @@
 .navbar-custom{
 background-color:#394a6d !important;
 /* background-color:  rgb(117,117,117) !important; */
+color:white !important;
 }
 
 .material-icons {
-  color:white !important;
+  color:#ffa726 !important;
 }

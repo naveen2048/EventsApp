@@ -47,9 +47,9 @@ a:focus, a:hover {
 }
 
 .eventImg {
-  width: 100%;
+  width: 410px;
   overflow: hidden;
-  height: 200px;
+  height: 230px;
   /* background: no-repeat #f6f7f8;
   background-image: linear-gradient(to right,#f6f7f8 0,#edeef1 20%,#f6f7f8 40%,#f6f7f8 100%);
   background-image: -webkit-gradient(to right,#f6f7f8 0,#edeef1 20%,#f6f7f8 40%,#f6f7f8 100%);
